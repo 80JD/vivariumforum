@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<title>Log in - Vivarium Forums - vBulletin Admin Control Panel</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<link rel="stylesheet" type="text/css" href="../cpstyles/vBulletin_3_Default/controlpanel.css" />
+	
+	
+</head>
+<body style="margin:0px" onload="set_cp_title(); document.forms.loginform.vb_login_username.focus()"><div style="background:#fff8dc;border-bottom:1px solid #ccc;padding:8px;text-align:center;font:13px Arial,sans-serif;color:#333">Archived, read-only copy of the Vivarium Forum (2006 to 2014). Posts belong to their original authors.</div>
+<!-- END CONTROL PANEL HEADER -->
+
+	
+	
+	<form action="../login.php?do=login" method="post" name="loginform" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf); js_do_options(this)">
+	<input type="hidden" name="url" value="/community/admincp/" />
+	<input type="hidden" name="s" value="3359fa76656f963c56b9c6a462964799" />
+	<input type="hidden" name="logintype" value="cplogin" />
+	<input type="hidden" name="do" value="login" />
+	<input type="hidden" name="vb_login_md5password" value="" />
+	<input type="hidden" name="vb_login_md5password_utf" value="" />
+		<p>&nbsp;</p><p>&nbsp;</p>
+	<table class="tborder" cellpadding="0" cellspacing="0" border="0" width="450" align="center"><tr><td>
+
+		<!-- header -->
+		<div class="tcat" style="padding:4px; text-align:center"><b>Log in</b></div>
+		<!-- /header -->
+
+		<!-- logo and version -->
+		<table cellpadding="4" cellspacing="0" border="0" width="100%" class="navbody">
+		<tr valign="bottom">
+			<td><img src="../cpstyles/vBulletin_3_Default/cp_logo.gif" alt="" title="vBulletin&reg; v3.6.4, Copyright &copy;2000-2007, Jelsoft Enterprises Ltd." border="0" /></td>
+			<td>
+				<b><a href="../index.php">Vivarium Forums</a></b><br />
+				vBulletin 3.6.4 Admin Control Panel<br />
+				&nbsp;
+			</td>
+		</tr>
+				</table>
+		<!-- /logo and version -->
+
+		<table cellpadding="4" cellspacing="0" border="0" width="100%" class="logincontrols">
+		<col width="50%" style="text-align:right; white-space:nowrap"></col>
+		<col></col>
+		<col width="50%"></col>
+
+		<!-- login fields -->
+		<tr>
+			<td>User Name</td>
+			<td><input type="text" style="padding-left:5px; font-weight:bold; width:250px" name="vb_login_username" value="" accesskey="u" tabindex="1" id="vb_login_username" /></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" style="padding-left:5px; font-weight:bold; width:250px" name="vb_login_password" accesskey="p" tabindex="2" id="vb_login_password" /></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr style="display: none" id="cap_lock_alert">
+			<td>&nbsp;</td>
+			<td class="tborder"><strong>Caps Lock is on!</strong><br />
+<br />
+Having Caps Lock on may cause you to enter your password incorrectly. You should press Caps Lock to turn it off before entering your password.</td>
+			<td>&nbsp;</td>
+		</tr>
+		<!-- /login fields -->
+
+				<!-- admin options -->
+		<tbody id="loginoptions" style="display:none">
+		<tr>
+			<td>Style</td>
+			<td><select name="cssprefs" class="login" style="padding-left:5px; font-weight:normal; width:250px" tabindex="5">		<option value="vBulletin_2_Default">vBulletin 2 Default</option>
+		<option value="" selected="selected">vBulletin 3 Default</option>
+		<option value="vBulletin_3_Frontend">vBulletin 3 Frontend</option>
+		<option value="vBulletin_3_Manual">vBulletin 3 Manual</option>
+		<option value="vBulletin_3_Silver">vBulletin 3 Silver</option>
+</select></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Options</td>
+			<td>
+				<input type="checkbox" name="nojs" value="1" tabindex="6" />Save open groups automatically			</td>
+			<td class="login">&nbsp;</td>
+		</tr>
+		</tbody>
+		<!-- /admin options -->
+		
+		<!-- submit row -->
+		<tr>
+			<td colspan="3" align="center">
+				<input type="submit" class="button" value="  Log in  " accesskey="s" tabindex="3" />
+				<input type="button" class="button" value=" Options " accesskey="o" onclick="js_show_options('loginoptions', this)" tabindex="4" />			</td>
+		</tr>
+		<!-- /submit row -->
+		</table>
+
+	</td></tr></table>
+	</form>
+	
+	
+
+<!-- START CONTROL PANEL FOOTER -->
+
+</body>
+</html>
